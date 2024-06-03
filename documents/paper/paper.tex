@@ -1,11 +1,10 @@
-\documentclass{report}
+\documentclass{article}
 
 \usepackage[ngerman]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{hyperref}
 \usepackage{csquotes}
-\usepackage[a4paper]{geometry}
 
 \usepackage[
     backend=biber,
@@ -23,36 +22,98 @@
     eprint=false]{biblatex}
 \addbibresource{../references/bibliography.bib}
 
-
-\title{Ethik im Umgang mit Daten}
-\author{Name des Autors}
+\title{Die KI in der Justiz}
+\author{Shania Müller}
 \date{\today}
 
-
 \begin{document}
-
 \maketitle
 
 \abstract{
-    Dies ist eine Vorlage für eine Maturarbeit in der Informatik am Gymnasium Muttenz. Sie dient dazu, die Arbeit schnell und einfach zu starten und sollte einen guten Überblick über die Arbeit bieten.
+    In diesem Dokument schreibe ich über die KI im Justizwesen. Dabei stelle ich das COMPAS Programm 
+    und einen speziellen Fall vor. Viel Spass beim Lesen!
 }
 
 \tableofcontents
 
-\chapter{Einleitung}
 
-Hier kommt die Einführung. Der Text hier sollte eigentlich noch viel länger sein, so das hier nicht so merkwürdige Umbrüche entstehen.
+\newpage
+\section {Einleitung}
+ 
+Die Zunehmende Verwendung der KI im Rechtssystem löst Diskussionen über den 
+Umgang mit Daten und der Ethik aus. Während die KI-Technologie helfen kann, den
+Gerichtsprozess zu vereinfachen, gibt es neue Herausforderungen für Fairness und Datenschutz.
+Wie kommen Daten, Ethik und die KI in dem Justitzwesen
+zusammen und welche Bedeutung hat es für das Rechtssystem? 
 
-Ich kann weitere Kapitel auch importieren.
 
-\input{chap_methode.tex}
+\section {KI vor Gericht und COMPAS}
 
-\section{Etwas mit Quellen}
+Grundsätzlich wird die KI vor Gericht verwendet, um Richtern bei Entscheidungen zu helfen. 
+Daten über den Angeklagten, wie frühere Straftaten und persönliche Informationen, werden in ein 
+KI-System eingegeben. Dieses System analysiert die Daten und erstellt Risikobewertungen.
+Diese Bewertungen unterstützen Richter bei der Festlegung von Strafen oder Bewährungsauflagen. 
+Die KI ist nur ein Hilfsmittel und ersetzt nicht die menschliche Entscheidungsfindung.
+\newline COMPAS 'Correctional Offender Management Profiling for Alternative Sanctions', ist ein 
+algorithmisches Risikobewertungstool, das in der Strafjustiz verwendet wird, um die 
+Wahrscheinlichkeit zu bewerten, ob ein Straftäter erneut straffällig wird.
+Entwickelt von der Firma Northpointe, analysiert COMPAS verschiedene Faktoren, um 
+einen Risikowert zu berechnen, der Richtern und anderen 
+Strafjustizbehörden helfen soll, Entscheidungen über Strafen, Bewährung und andere 
+Massnahmen zu treffen. \Citep{COMPAS} \Citep{KI-in-der-Justiz}
 
-Etwas mit Änderung hier am Ende.
 
-Wenn ich eine Quelle zitieren möchte, kann ich das ganze einfach am Ende des Satzes machen \citep{example}. Oder wie \citet{example} sagt, auch mitten im Text.
 
+\section {KI-Training}
+
+Wie wird die KI darauf trainiert? \newline Zuerst werden umfangreiche Daten gesammelt, darunter Informationen zu früheren Verurteilungen und
+demographische Daten wie Alter und Geschlecht. Diese Daten werden bereinigt und in ein einheitliches 
+Format gebracht, um sie analysieren zu können. \newline Dann beginnt der Trainingsprozess, bei dem maschinelle Lernalgorithmen Muster und Zusammenhänge in den 
+Daten erkennen. Während dieses Prozesses wird das Modell ständig getestet und angepasst, um die 
+Genauigkeit der Vorhersagen zu verbessern. \newline Nach dem Training wird die KI in einer kontrollierten Umgebung weiterhin überwacht. Regelmässige 
+Überprüfungen und Aktualisierungen stellen sicher, dass die Entscheidungen genau und fair bleiben. \newline Ein wichtiger Aspekt ist die Transparenz und ethische Verantwortung. Entwickler müssen sicherstellen, 
+dass die Algorithmen keine bestehenden Vorurteile verstärken und die Ergebnisse nachvollziehbar sind. \Citep{lernen-wie-maschinen}
+
+
+
+\section {Menschen vor Gericht wegen KI}
+
+Eric Loomis wurde vor Gericht gestellt, weil er im Februar 2013 in einem von ihm gestohlenen Auto 
+erwischt wurde und wurde so wegen diversen Verkehrsdelikten angeklagt. Der Fall hatte eine besonders grosse 
+Aufmerksamkeit erlangt, aufgrund der Art und Weise, wie für seine Verurteilung moderne
+Technologien, wie die KI, eingesetzt wurden.  
+Bei seiner Verurteilung nutzte das Gericht das Risikobewertungstool COMPAS, das ihn als hohes Risiko für erneute 
+Straftaten einstufte. Loomis erhielt daraufhin eine sechseinhalbjährige Haftstrafe.
+Loomis argumentierte, dass die Verwendung von COMPAS seine Rechte auf ein faires Verfahren verletzte. Er kritisierte 
+die Intransparenz des Algorithmus, da weder er noch seine Anwälte die genaue Methode oder die dazugehörigen Daten 
+nachvollziehen konnten. Er hatte Angst, dass der Algorithmus voreingenommen sein könnte und systematische Vorurteile 
+gegen Minderheiten, in dem Fall ihn, hielt.
+Der Fall Loomis vs. Wisconsin ging bis zum Obersten Gerichtshof von Wisconsin. Dieser entschied gegen Loomis und 
+erlaubte die Verwendung von COMPAS. Das Gericht betonte jedoch, dass Richter die Einschränkungen und möglichen Vorurteile 
+solcher Tools kennen müssen.
+Der Fall führte zu einer grossen Diskussion über die Nutzung von Algorithmen in der Strafjustiz. Kritiker sagten, 
+dass die Abhängigkeit von undurchsichtigen Algorithmen die Transparenz und Fairness gefährden könnte. Der Fall Loomis 
+ist seitdem ein wichtiges Beispiel in der Debatte über die ethischen und praktischen Folgen der Verwendung 
+von KI im Justizsystem. \Citep{state-loomis} \Citep{Software-Haftstrafen}
+
+
+
+\section {Ethischer Zusammenhang}
+Der Einsatz von Künstlicher Intelligenz im Gerichtswesen hat das Potenzial, Prozesse effizienter zu gestalten, aber 
+auch ethische Fragen aufzuwerfen. Eine Hauptbedenken ist die Transparenz der Algorithmen - ihre Funktionsweise 
+ist oft schwer zu verstehen. Dadurch können Angeklagte und ihre Verteidiger Entscheidungen möglicherweise nicht nachvollziehen. 
+Auch die Fairness ist ein Anliegen, da KI-Systeme auf historischen Daten beruhen, die Vorurteile widerspiegeln können. Es ist wichtig, 
+sicherzustellen, dass diese Vorurteile nicht in die Entscheidungen einfliessen. Darüber hinaus ist die Frage der Verantwortlichkeit entscheidend. 
+Es muss klar sein, wer für die von KI getroffenen Entscheidungen verantwortlich ist und wie Fehler korrigiert werden können. 
+Insgesamt muss der Einsatz von KI im Gerichtswesen die Grundrechte der Angeklagten respektieren und ethische Grundsätze wie Transparenz, 
+Fairness und Verantwortlichkeit tragen. \Citep{rolle-KI-im-Recht}
+
+
+
+
+
+
+\newpage 
 \printbibliography
 
 \end{document}
